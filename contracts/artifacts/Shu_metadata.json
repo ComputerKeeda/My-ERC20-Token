@@ -407,7 +407,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/MyToken.sol": "MyToken"
+			"contracts/MyToken.sol": "Shu"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -462,11 +462,11 @@
 			]
 		},
 		"contracts/MyToken.sol": {
-			"keccak256": "0xbeea391174c4c90d37c4468b90604324716347efab5891ee90effd31cfebde5e",
+			"keccak256": "0x6de478857204f83c66346b6b3fd13c6edf220a2614bf5e5032091cbb8cd7eb44",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://76c18db5e758de0a003e1dbe69809253814be0dadaec523f183e9729cd1fb86a",
-				"dweb:/ipfs/QmNWUXUa3fk989Z95J2kidaB41JrngkoJScHVgkiRRADay"
+				"bzz-raw://3483e594a3a05e51d46231b9d2b14bbed085404117b103ccf73c7bc05e7da37d",
+				"dweb:/ipfs/QmRRtufL6wBE6sa8YShW7PBgG4tDiMAHPFHPtDVWvxnFo3"
 			]
 		}
 	},

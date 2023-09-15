@@ -1,24 +1,15 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.9;
+pragma solidity ^0.8.1;
 
-import "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol";
-import "@openzeppelin/contracts-upgradeable/token/ERC20/extensions/ERC20BurnableUpgradeable.sol";
-import "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
-import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+import "@openzeppelin/contracts/access/Ownable.sol";
 
-contract MyToken is Initializable, ERC20Upgradeable, ERC20BurnableUpgradeable, OwnableUpgradeable {
-    /// @custom:oz-upgrades-unsafe-allow constructor
-    constructor() {
-        _disableInitializers();
-    }
-
-    function initialize() initializer public {
-        __ERC20_init("SHU Coin", "SEXY");
-        __ERC20Burnable_init();
-        __Ownable_init();
+contract Khana is ERC20, Ownable {
+    constructor() ERC20("Khana Coin", "KC") {
+        _mint(msg.sender, 1 * 10 ** decimals());
     }
 
     function mint(address to, uint256 amount) public onlyOwner {
-        _mint(to, amount);
+        _mint(to, amount * 10 ** decimals());
     }
 }
